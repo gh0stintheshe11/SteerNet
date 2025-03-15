@@ -3,3 +3,5 @@ torchvision
 numpy
 pandas
 matplotlib
+openpyxl
+av
