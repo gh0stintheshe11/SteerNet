@@ -99,8 +99,8 @@ def process_all_segments(base_path='data/comma2k19/extracted/Chunk_1/'):
                     'n_frames': len(df)
                 }
                 
-                main_dir = main_dir[-20:]  # Get last 20 characters
-                csv_filename = os.path.join(output_dir, f"synced_steer_data_{main_dir}_SEG{segment}.csv")
+                clean_main_dir = main_dir.replace("|", "")
+                csv_filename = os.path.join(output_dir, f"synced_steer_data_{clean_main_dir}_SEG{segment}.csv")
                 df.to_csv(csv_filename, index=False)
                 print(f"Saved segment data to: {csv_filename}")
                 
@@ -185,8 +185,8 @@ def process_all_segments_short(base_path='data/comma2k19/extracted/Chunk_1/'):
                     'n_frames': len(df_short)
                 }
                 
-                main_dir = main_dir[-20:]  # Get last 20 characters
-                csv_filename = os.path.join(output_dir, f"synced_steer_data_short_{main_dir}_SEG{segment}.csv")
+                clean_main_dir = main_dir.replace("|", "")
+                csv_filename = os.path.join(output_dir, f"synced_steer_data_short_{clean_main_dir}_SEG{segment}.csv")
                 df_short.to_csv(csv_filename, index=False)
                 print(f"Saved downsampled segment data to: {csv_filename}")
                 
