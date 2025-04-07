@@ -1,7 +1,7 @@
 .DS_Store
 .conda
 data
-data_synced
+data_synced*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
