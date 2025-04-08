@@ -16,9 +16,6 @@ To download selected chunks (about 9GB each), add `--select-file=1` (for first c
 aria2c.exe --dir="data/" --select-file=1 --seed-time=0 --continue=true "https://academictorrents.com/download/65a2fbc964078aff62076ff4e103f18b951c5ddb.torrent"
 ```
 
-> [!TIP] 
-> The download can be paused (Ctrl+C) and resumed by running the same command again.
-
 > [!WARNING] 
 > Download speed will vary based on your internet connection and available seeders. Thus, it is best to download the few chunks than the full dataset.
 
