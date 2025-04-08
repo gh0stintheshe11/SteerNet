@@ -10,7 +10,7 @@ import concurrent.futures
 from functools import partial
 
 # Configuration constants
-TARGET_FPS = 22.0  # Desired FPS (will be capped by original video FPS)
+TARGET_FPS = 100  # Desired FPS (will be capped by original video FPS), using a ridiculous high fps to make it use the default framerate
 CHUNK_NAME = "Chunk_1"  # Which chunk to process (e.g., "Chunk_1", "Chunk_2", etc.)
 
 print(f"Processing {CHUNK_NAME} at {TARGET_FPS} FPS")
