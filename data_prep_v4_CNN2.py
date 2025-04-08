@@ -264,9 +264,6 @@ if __name__ == "__main__":
     if custom_data_path:
         print(f"Using custom data path: {custom_data_path}")
         zip_path = os.path.join(custom_data_path, f'{CHUNK_NAME}.zip')
-        # You can also override extract_dir if needed
-        # extract_dir = os.path.join(custom_data_path, 'extracted')
-        # chunk_path = os.path.join(extract_dir, CHUNK_NAME)
 
     # Create necessary directories
     os.makedirs('data_synced', exist_ok=True)
