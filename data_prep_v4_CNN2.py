@@ -10,7 +10,7 @@ import concurrent.futures
 from functools import partial
 
 # Configuration constants
-TARGET_FPS = 22.0  # Desired FPS (will be capped by original video FPS)
+TARGET_FPS = 20.0  # Desired FPS (will be capped by original video FPS)
 CHUNK_NAME = "Chunk_1"  # Which chunk to process (e.g., "Chunk_1", "Chunk_2", etc.)
 
 print(f"Processing {CHUNK_NAME} at {TARGET_FPS} FPS")
@@ -67,7 +67,7 @@ def save_frame_image(frame, output_dir, frame_idx):
     
     # Convert to PIL Image and resize
     frame_pil = Image.fromarray(frame_array)
-    frame_pil = frame_pil.resize((400, 240), Image.Resampling.BILINEAR)
+    frame_pil = frame_pil.resize((346, 260), Image.Resampling.BILINEAR) #keep video ratio the same when saving frame, actually less pixels than before, but its more information
     
     # Save the image
     frame_path = os.path.join(output_dir, f"{frame_idx}.jpg")
@@ -94,7 +94,7 @@ def sync_video_and_steering_with_more_state_data(segment):
     video_path = os.path.join(segment, 'video.hevc')
     
     # Get original video FPS
-    original_fps = get_video_fps(video_path)
+    original_fps = 20
     if original_fps is None:
         raise ValueError(f"Could not determine FPS for video: {video_path}")
         
