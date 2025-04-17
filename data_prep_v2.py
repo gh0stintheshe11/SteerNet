@@ -11,7 +11,7 @@ from functools import partial
 
 # Configuration constants
 TARGET_FPS = 20.0  # Desired FPS (will be capped by original video FPS)
-CHUNK_NAME = "Chunk_2"  # Which chunk to process (e.g., "Chunk_1", "Chunk_2", etc.)
+CHUNK_NAME = "Chunk_1"  # Which chunk to process (e.g., "Chunk_1", "Chunk_2", etc.)
 
 print(f"Processing {CHUNK_NAME} at {TARGET_FPS} FPS")
 
