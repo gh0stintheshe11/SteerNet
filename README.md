@@ -67,6 +67,10 @@ SteerNet/
 - For Mac:
   directly run the [download_dataset.py](download_dataset.py) to download the dataset
 
+  ```bash
+  python download_dataset.py
+  ```
+
 > [!WARNING] 
 > Download speed will vary based on your internet connection and available seeders. Thus, it is best to download the few chunks than the full dataset.
 
