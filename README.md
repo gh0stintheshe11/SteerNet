@@ -87,7 +87,7 @@ The origianl dataset is video segments and CAN bus sensor data. However, the sen
 python data_prep_v2.py
 ```
 > [!NOTE]  
-> If you wnat to explore the frame rate vs model accuracy, you can change the diresred frame rate in the script.
+> If you wnat to explore the frame rate vs model accuracy experiment as we did in the report, you can change the diresred frame rate in the script.
 
 ### Model Building/Training/Evaluation
 
@@ -108,9 +108,9 @@ In the testing section, we plot the prediction vs ground truth diagram, correlat
 
 After report is written, we did more training with larger dataset, more epochs, and more improved training process out of our curiosity. The result are basically the same as the report. 
 
-The framerate test result is updated compared to the report. The new result is generate with more well designed experiment setup.
+The framerate experiment result is updated compared to the report. The new result is generate with more well designed experiment setup. The result shows that the framerate is not ralated to the model's performance. ie, using 1 fps frame rate as input and 10 fps frame rate as input will get the similar performance from the model. Even though the result changes, but this experiment still means significant due to the same reason as we inlcude in the presentation and report. 
 
-the result shows that the framerate is not ralated to the model's performance. ie, using 1 fps frame rate as input and 10 fps frame rate as input will get the similar performance from the model. Even though the result changes, but this experiment still means significant due to the same reason as we inlcude in the presentation and report. ***As trainings involves images is perticularly time consuming and computing power intensive, knowing that using fewer frames will get similar performance from model is effectivly reducing the training time and increasing the efficiency of the training process***
+***As trainings involves images is perticularly time consuming and computing power intensive, knowing that using fewer frames will get similar performance from model is effectivly reducing the training time and increasing the efficiency of the training process***
 
 ![framerate_test](./results/frame_rate_comparison_fair.png)
 
@@ -124,7 +124,7 @@ The RNN performance is the best but all model performan at the same level. All m
 ![v4_CNN_MobileNetV2](./results/CNN_MobileNetV2_new.png)
 
 > [!NOTE]  
-> Due to the incased size of the dataset for the new training, it is particularly time consuming to train the RNN models due to its nature of sequential dataset format. Thus, so far the training is not completed. The results are based on the old training on smaller dataset.
+> Due to the incased size of the dataset for the new training, it is particularly time consuming to train the RNN models due to its nature of using sequential dataset format. Thus, so far the training is not completed. The results are based on the old training on smaller dataset.
 
 - RNN old
 ![v4_RNN](./results/RNN_old.png)
