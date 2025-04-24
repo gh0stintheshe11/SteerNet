@@ -2,7 +2,7 @@
 
 This project evaluates four architectures for short-term steering prediction: a baseline CNN inspired by NVIDIA’s PilotNet, an enhanced CNN with more temporal steering history, a MobileNetV2-based CNN, and an RNN with ConvLSTM. All models performed similarly, with RNN demonstrating the highest accuracy (MAE 0.57°).
 
-> [!IMPORTANT]  
+> [!CAUTION] 
 > The report is written based on the result of the [previous version](https://github.com/gh0stintheshe11/SteerNet/tree/52d8f3934dbdb8a67bdfaafc7b5af43fbc6916fe) of the project. Some of the latest results does not match exactly with the results in the report. However, the overall conclusions remain the same. 
 
 ## Table of Contents
@@ -88,7 +88,7 @@ The origianl dataset is video segments and CAN bus sensor data. However, the sen
 python data_prep_v2.py
 ```
 > [!NOTE]  
-> If you wnat to explore the frame rate vs model accuracy experiment as we did in the report, you can change the diresred frame rate in the script.
+> If you want to explore the frame rate vs model accuracy experiment as we did in the report, you can change the diresred frame rate in the [data_prep_v2.py](data_prep_v2.py) script.
 
 ### Model Building/Training/Evaluation
 
