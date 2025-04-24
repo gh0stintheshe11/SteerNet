@@ -123,7 +123,7 @@ The RNN performance is the best but all model performan at the same level. All m
 ![v4_CNN_MobileNetV2](./results/CNN_MobileNetV2_new.png)
 
 > [!NOTE]  
-> Due to the incased size of the dataset for the new training, it is particularly time consuming to train the RNN models due to its nature of using sequential dataset format. Thus, so far the training is not completed. The results are based on the old training on smaller dataset.
+> Since the increased size of the dataset for the new training and the RNN's nature of using sequential dataset format, it is particularly time consuming to train the RNN models. Thus, so far the training is not completed for the RNN models. The results are based on the old training on smaller dataset.
 
 - RNN old
 ![v4_RNN](./results/RNN_old.png)
