@@ -2,6 +2,9 @@
 
 This project evaluates four architectures for short-term steering prediction: a baseline CNN inspired by NVIDIA’s PilotNet, an enhanced CNN with more temporal steering history, a MobileNetV2-based CNN, and an RNN with ConvLSTM. All models performed similarly, with RNN demonstrating the highest accuracy (MAE 0.57°).
 
+> [!IMPORTANT]  
+> The report is written based on the result of the [previous version](https://github.com/gh0stintheshe11/SteerNet/tree/52d8f3934dbdb8a67bdfaafc7b5af43fbc6916fe) of the project. Some of the results does not match exactly with the results in the report. However, the overall conclusions remain the same. 
+
 ## Table of Contents
 
 - [SteerNet](#steernet)
