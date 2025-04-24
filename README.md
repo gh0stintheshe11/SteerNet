@@ -50,16 +50,16 @@ SteerNet/
 
   2. Run this command to download the full dataset (94.62GB):
   ```bash
-  aria2c.exe --dir="data/" --seed-time=0 --continue=true "https://academictorrents.com/download/65a2fbc964078aff62076ff4e103f18b951c5ddb.torrent"
+  .\aria2c.exe --dir="data/" --seed-time=0 --continue=true "https://academictorrents.com/download/65a2fbc964078aff62076ff4e103f18b951c5ddb.torrent"
   ```
 
   To download selected chunks (about 9GB each), add `--select-file=1` (for first chunk), `--select-file=2` (for second chunk), etc.:
   ```bash
-  aria2c.exe --dir="data/" --select-file=1 --seed-time=0 --continue=true "https://academictorrents.com/download/65a2fbc964078aff62076ff4e103f18b951c5ddb.torrent"
+  .\aria2c.exe --dir="data/" --select-file=1 --seed-time=0 --continue=true "https://academictorrents.com/download/65a2fbc964078aff62076ff4e103f18b951c5ddb.torrent"
   ```
 
-  > [!WARNING] 
-  > Download speed will vary based on your internet connection and available seeders. Thus, it is best to download the few chunks than the full dataset.
+> [!WARNING] 
+> Download speed will vary based on your internet connection and available seeders. Thus, it is best to download the few chunks than the full dataset.
 
 
   - NONE IMPRTANT PART (this is just what nerds do)
