@@ -132,4 +132,4 @@ The RNN performance is the best but all model performan at the same level. All m
 - RNN GRU old
 ![v4_RNN_GRU](./results/RNN_GRU_old.png)
 
-
+Overall, the conclusion is the same as the report. Using camera video frames and sensor data as input, CNN can predict the steering angle with decent accuracy. However, due to the stateless nature of the CNN, it can only predict a steering angle for a short period of time, not predict more steps into the future, which leads many problems, such as failing to detect obstacles and turning too late. Such problems are solved by the RNN models' stateful nature. When the model is making decent predictions, RNN and CNN models can get similar performance. But when CNN is making wrong predictions due to the problem mentioned above, RNN is more likely to avoid the problem and make better predictions.
