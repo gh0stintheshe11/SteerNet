@@ -3,7 +3,7 @@
 This project evaluates four architectures for short-term steering prediction: a baseline CNN inspired by NVIDIA’s PilotNet, an enhanced CNN with more temporal steering history, a MobileNetV2-based CNN, and an RNN with ConvLSTM. All models performed similarly, with RNN demonstrating the highest accuracy (MAE 0.57°).
 
 > [!CAUTION] 
-> The report is written based on the result of the [previous version](https://github.com/gh0stintheshe11/SteerNet/tree/52d8f3934dbdb8a67bdfaafc7b5af43fbc6916fe) of the project. Some of the latest results does not match exactly with the results in the report. However, the overall conclusions remain the same. 
+> The report is written based on the result of the [previous version](https://github.com/gh0stintheshe11/SteerNet/tree/52d8f3934dbdb8a67bdfaafc7b5af43fbc6916fe) of the project. After the report is written, we did more training with larger dataset, more epochs, and more improved training process out of our curiosity. Some of the latest results does not match exactly with the results in the report. However, the overall conclusions remain the same. 
 
 ## Table of Contents
 
@@ -107,11 +107,9 @@ In the testing section, we plot the prediction vs ground truth diagram, correlat
 
 ## Latest Results
 
-After report is written, we did more training with larger dataset, more epochs, and more improved training process out of our curiosity. The result are basically the same as the report. 
+The framerate experiment result is updated compared to the report. The new result is generate with more well designed experiment setup. The result shows that the framerate is not ralated to the model's performance. ie, using 1 fps frame rate as input and 10 fps frame rate as input will get the similar performance from the model. Even though the result changes, but this experiment is still significant due to the same reason as we inlcude in the presentation and report. 
 
-The framerate experiment result is updated compared to the report. The new result is generate with more well designed experiment setup. The result shows that the framerate is not ralated to the model's performance. ie, using 1 fps frame rate as input and 10 fps frame rate as input will get the similar performance from the model. Even though the result changes, but this experiment still means significant due to the same reason as we inlcude in the presentation and report. 
-
-***As trainings involves images is perticularly time consuming and computing power intensive, knowing that using fewer frames will get similar performance from model is effectivly reducing the training time and increasing the efficiency of the training process***
+***As trainings involving images are perticularly time consuming and computing power intensive, knowing that using fewer frames will get similar performance from model is effectivly reducing the training time and increasing the efficiency of the training process***
 
 ![framerate_test](./results/frame_rate_comparison_fair.png)
 
